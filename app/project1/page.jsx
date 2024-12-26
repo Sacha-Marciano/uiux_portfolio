@@ -138,8 +138,8 @@ const Project1 = () => {
       </div>
       {/* Frame 3 - Competitors */}
       <div className="flex flex-col justify-center items-center">
-        <h2 className="mt-28 mb-16"> Competitors Analysis</h2>
-        <p className="max-w-[1250px]">
+        <h2 className="mt-12 md:mt-28 mb-16"> Competitors Analysis</h2>
+        <p className="max-w-[1250px] px-10 md:px-0">
           The competitive analysis revealed significant shortcomings in current
           personal event planning apps. Evite focuses on digital invitations and
           RSVP tracking but lacks tools for task management or guest
@@ -152,7 +152,7 @@ const Project1 = () => {
           <strong>missed details</strong>
         </p>
         {/* competitors logos */}
-        <div className="flex gap-16 justify-center my-24">
+        <div className="flex gap-16 justify-center my-24 px-10 md:px-0">
           <div>
             <img src={"/assets/project1/competitors/Competitors1.png"} />
             <p className="text-center mt-5">Bring it</p>
@@ -164,14 +164,14 @@ const Project1 = () => {
           <div>
             <img
               src={"/assets/project1/competitors/Competitors3.png"}
-              className="ml-3"
+              className="md:ml-3"
             />
-            <p className="text-center mt-5">Pro Party Planner</p>
+            <p className="text-center mt-3">Pro Party Planner</p>
           </div>
         </div>
       </div>
       {/* Frame 4 - User Research */}
-      <div className="md:pt-16 md:pb-14 md:pr-52 ">
+      <div className="px-10 md:pt-16 md:pb-14 md:pr-52 ">
         <h2 className="bg-primary text-transparent bg-clip-text font-medium mb-14">
           User Research
         </h2>
@@ -182,13 +182,13 @@ const Project1 = () => {
         </p>
       </div>
       {/* Doughnut charts */}
-      <div className="md:grid grid-cols-3 mb-60">
+      <div className="md:grid grid-cols-3 mb-24">
         {/* Chart 1 */}
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center px-5 mb-10">
           <p className="font-bold">
             When you are hosting,<br></br> what are the most challenging part ?
           </p>
-          <div className="border-r-black-100 border-r-2 w-[100%] p-28 flex justify-center">
+          <div className="md:border-r-black-100 md:border-r-2 w-[100%] px-28 py-10 flex justify-center">
             <DoughnutChart data1={57} data2={43} />
           </div>
           <div>
@@ -201,12 +201,12 @@ const Project1 = () => {
           </div>
         </div>
         {/* Chart 2 */}
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center px-5 mb-10">
           <p className="font-bold px-3">
             When you are hosting, who helps you with planning and organizing
             private events?
           </p>
-          <div className="border-r-black-100 border-r-2 w-[100%] p-28 flex justify-center">
+          <div className="md:border-r-black-100 md:border-r-2 w-[100%] px-28 flex justify-center py-10">
             {" "}
             <DoughnutChart data1={90} data2={10} />
           </div>
@@ -220,12 +220,12 @@ const Project1 = () => {
           </div>
         </div>
         {/* Chart 3 */}
-        <div className="flex flex-col items-center text-center gap-28">
+        <div className="flex flex-col items-center text-center px-5 mb-10">
           <p className="font-bold">
             As an organizer/guest,how do you ensure you don’t forget important
             details about the event?
           </p>
-          <div>
+          <div className="md:border-r-black-100 md:border-r-2 w-[100%] px-28 flex justify-center py-10">
             <DoughnutChart data1={70} data2={30} />
           </div>
           <div className="px-2">
@@ -241,22 +241,24 @@ const Project1 = () => {
       </div>
       {/* Frame 5 - Personas */}
       <div className="flex flex-col items-center">
-        <h2 className="mb-11">Personas</h2>
-        <p className="mb-16 text-center">
+        <h2 className="mb-7 md:mb-11">Personas</h2>
+        <p className="mb-7 md:mb-16 text-center">
           This research helped me to establish two main personas, each
           highlighting <br></br> unique aspects of the event planning
           experience.
         </p>
-        <div className="flex justify-between gap-x-[12px] object-contain mb-28">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-[12px] object-contain mb-14 md:mb-28 px-4">
           <img
             src={"/assets/project1/personas/Personas1.png"}
             alt="Personas 1"
-            width={"50%"}
+            // width={"50%"}
+            className="lg:max-w-[50%]"
           />
           <img
             src={"/assets/project1/personas/Personas2.png"}
             alt="Personas 2"
-            width={"50%"}
+            // width={"50%"}
+            className="lg:max-w-[50%]"
           />
         </div>
       </div>
@@ -265,41 +267,52 @@ const Project1 = () => {
         <img src={"/assets/project1/Frame6.png"} alt="Userflow diagram" />
       </div>
       {/* Frame 7 - Key Features */}
-      <div className="pt-16 pb-32 flex flex-col items-center">
+      <div className="pt-8  md:pt-16 pb-16 md:pb-32 flex flex-col items-center">
         <h2 className="font-medium">Key Features</h2>
-        <div className="w-full md:flex justify-around">
+        <div className="md:w-full flex flex-col md:flex-row items-center md:justify-around">
           {/* Icon 1 */}
-          <div className="text-center w-[20%]">
-            <div className="flex flex-col items-center p-16 border-b-[#FB0160] border-b-4">
+          <div className="text-center w-full md:w-[20%] flex items-center md:flex-col">
+            <div className="object-contain flex flex-col items-center p-4 md:p-16 md:border-b-[#FB0160] md:border-b-4">
               <img
                 src={"/assets/project1/features/Feature1.png"}
                 alt="Feature icon"
+                className="object-contain"
               />
             </div>
-            <h2 className="font-bold my-7">My Tasks</h2>
-            <p>Keep track of personal responsibilities</p>
+            <div>
+              <h2 className="text-xl md:text-3xl font-bold my-7">My Tasks</h2>
+              <p>Keep track of personal responsibilities</p>
+            </div>
           </div>
           {/* Icon 2 */}
-          <div className="text-center w-[20%]">
-            <div className="flex flex-col items-center p-16 border-b-[#FB0160] border-b-4">
+          <div className="text-center w-full md:w-[20%] flex items-center md:flex-col">
+            <div className="object-contain flex flex-col items-center p-4 box-border md:p-16 md:border-b-[#FB0160] md:border-b-4">
               <img
                 src={"/assets/project1/features/Feature2.png"}
                 alt="Feature icon"
+                className="object-contain"
               />
             </div>
-            <h2 className="font-bold my-7">Reminders</h2>
-            <p>Send reminders to guests about their assigned tasks</p>
+            <div>
+              <h2 className="text-xl md:text-3xl font-bold my-7">Reminders</h2>
+              <p>Send reminders to guests about their assigned tasks</p>
+            </div>
           </div>
           {/* Icon 3 */}
-          <div className="text-center w-[20%]">
-            <div className="flex flex-col items-center p-16 border-b-[#FB0160] border-b-4">
+          <div className="text-center w-full md:w-[20%] flex items-center md:flex-col">
+            <div className="object-contain flex flex-col items-center p-4 box-border md:p-16 md:border-b-[#FB0160] md:border-b-4">
               <img
                 src={"/assets/project1/features/Feature3.png"}
                 alt="Feature icon"
+                className="object-contain"
               />
             </div>
-            <h2 className="font-bold my-7">Event Schedule</h2>
-            <p>Track the event timeline and guest contributions</p>
+            <div>
+              <h2 className="text-xl md:text-3xl font-bold my-7">
+                Event Schedule
+              </h2>
+              <p>Track the event timeline and guest contributions</p>
+            </div>
           </div>
         </div>
       </div>
