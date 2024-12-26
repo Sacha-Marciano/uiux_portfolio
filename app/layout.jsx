@@ -3,6 +3,7 @@ import "./globals.css";
 
 // components
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",

@@ -171,7 +171,7 @@ const Project1 = () => {
         </div>
       </div>
       {/* Frame 4 - User Research */}
-      <div className="px-10 md:pt-16 md:pb-14 md:pr-52 ">
+      <div className="px-10 md:pt-16 md:pb-14 md:pr-52 mb-6 md:mb-0 ">
         <h2 className="bg-primary text-transparent bg-clip-text font-medium mb-14">
           User Research
         </h2>
@@ -269,10 +269,10 @@ const Project1 = () => {
       {/* Frame 7 - Key Features */}
       <div className="pt-8  md:pt-16 pb-16 md:pb-32 flex flex-col items-center">
         <h2 className="font-medium">Key Features</h2>
-        <div className="md:w-full flex flex-col md:flex-row items-center md:justify-around">
+        <div className="pr-10 md:w-full flex flex-col md:flex-row items-center md:justify-around">
           {/* Icon 1 */}
           <div className="text-center w-full md:w-[20%] flex items-center md:flex-col">
-            <div className="object-contain flex flex-col items-center p-4 md:p-16 md:border-b-[#FB0160] md:border-b-4">
+            <div className="object-contain flex flex-col items-center p-2 md:p-16 md:border-b-[#FB0160] md:border-b-4">
               <img
                 src={"/assets/project1/features/Feature1.png"}
                 alt="Feature icon"
@@ -318,14 +318,14 @@ const Project1 = () => {
       </div>
       {/* Prototype */}
       {/* Frame 8 - Events */}
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center p-10 md:p-0">
         <h2 className="bg-primary text-transparent bg-clip-text font-medium mb-14">
           Prototype
         </h2>
         <div className="md:flex md:h-[80vh] mb-16">
           <div className="md:py-16 md:pl-12">
-            <h2 className="font-medium mb-10">Events</h2>
-            <p className="md:max-w-[70%]">
+            <h2 className="font-medium mb-5 md:mb-10">Events</h2>
+            <p className="md:max-w-[70%] mb-5">
               The events page provides a<strong> centralized view </strong>of
               both personal events and those you're invited to. Effortlessly
               track who is hosting and see the list of attendees , whether
@@ -341,16 +341,16 @@ const Project1 = () => {
         </div>
       </div>
       {/* Frame 9 - Create a new event */}
-      <div className="md:flex md:h-[80vh] mb-16 justify-between">
+      <div className="flex flex-col md:flex-row md:h-[80vh] mb-16 justify-between p-10 md:p-0">
         <img
           src={"/assets/project1/prototype/Prototype1.png"}
           alt="Protorype Image"
           height={"80%"}
-          className="object-contain md:ml-10"
+          className="object-contain md:ml-10 order-last md:order-none"
         />
         <div className="md:py-10 md:pl-12">
-          <h2 className="font-medium mb-10">Create a new event</h2>
-          <p className="md:max-w-[70%] mb-20">
+          <h2 className="font-medium mb-5 md:mb-10">Create a new event</h2>
+          <p className="md:max-w-[70%] mb-5 md:mb-20">
             To get started, create a new event by following these easy steps,
             ensuring all the important information is set.{" "}
           </p>
@@ -375,7 +375,7 @@ const Project1 = () => {
             </div>
           </div>
           {/* Step 3 */}
-          <div className="flex gap-6">
+          <div className="flex gap-6 mb-5">
             <h2 className="bg-primary text-transparent bg-clip-text font-medium">
               3
             </h2>
@@ -387,7 +387,7 @@ const Project1 = () => {
         </div>
       </div>
       {/* Frame 10 - Event Page */}
-      <div className="md:flex md:h-[80vh] mb-16">
+      <div className="md:flex md:h-[80vh] mb-16 p-10 md:p-0">
         <div className="md:py-16 md:pl-12 md:flex md:flex-col">
           <h2 className="font-medium mb-10">Event Page</h2>
           <p className="md:max-w-[70%]">
@@ -398,29 +398,29 @@ const Project1 = () => {
           {/* Arrows */}
           <div className="self-end md:pr-6 md:pt-12 md:max-w-[445px]">
             {/* Arrow 1 */}
-            <div className="flex items-center justify-end gap-6">
+            <div className="flex items-center justify-end gap-6 mt-5 md:mt-0 text-center md:text-start border-accent border-2 rounded-lg md:border-0">
               <p>Event Details (Date , Time , Location and RSVP’s) </p>
-              <div className="text-5xl bg-primary text-transparent bg-clip-text">
+              <div className="text-5xl bg-primary text-transparent bg-clip-text hidden md:flex">
                 &#8594;
               </div>
             </div>
             {/* Arrow 2 */}
-            <div className="flex items-center justify-end gap-6  md:mt-12">
+            <div className="flex items-center justify-end gap-6 mt-5 md:mt-12 text-center md:text-start  border-accent border-2 rounded-lg md:border-0">
               <p>
                 Pre-set task list divided into categories, enabling the{" "}
                 organizer to assign tasks to guests{" "}
               </p>
-              <div className="text-5xl bg-primary text-transparent bg-clip-text">
+              <div className="text-5xl bg-primary text-transparent bg-clip-text hidden md:flex">
                 &#8594;
               </div>
             </div>
             {/* Arrow 3 */}
-            <div className="flex items-center justify-end gap-6 mt-12">
+            <div className="flex items-center justify-end gap-6 mt-5 md:mt-12 mb-7 md:mb-0 text-center md:text-start  border-accent border-2 rounded-lg md:border-0">
               <p>
                 “My Task” section helps the organizer stay focused on their
                 personal responsibilities{" "}
               </p>
-              <div className="text-5xl bg-primary text-transparent bg-clip-text">
+              <div className="text-5xl bg-primary text-transparent bg-clip-text hidden md:flex">
                 &#8594;
               </div>
             </div>
@@ -434,18 +434,18 @@ const Project1 = () => {
         />
       </div>
       {/* Frame 11 - Task List */}
-      <div className="md:flex md:h-[80vh] mb-16 w-full justify-between relative">
+      <div className="flex flex-col md:flex-row md:h-[80vh] md:mb-16 w-full justify-between relative p-10 md:p-0">
         <img
           src={"/assets/project1/prototype/Prototype3.png"}
-          alt="Protorype Image"
-          className="object-contain md:ml-10 relative bottom-2"
+          alt="Prototype Image"
+          className="object-contain md:ml-10 md:relative md:bottom-2 hidden md:flex"
         />
         <img
           src={"/assets/project1/prototype/Prototype4.png"}
-          alt="Protorype Image"
-          className="object-contain relative h-[80%] self-end right-14"
+          alt="Prototype Image"
+          className="object-contain relative md:h-[80%] md:self-end md:right-14"
         />
-        <div className="md:py-16 md:pl-12">
+        <div className="md:py-16 md:pl-12 order-first md:order-none">
           <h2 className="font-medium mb-10">Task List</h2>
           <p className="md:max-w-[80%] md:mb-16">
             For each event Together provides a task list feature that offers
@@ -455,7 +455,7 @@ const Project1 = () => {
             <strong> comprehensive planning </strong> that covers every detail,
             so you never miss a beat.
           </p>
-          <div className="flex w-[80%] justify-between  relative">
+          <div className="flex md:w-[80%] justify-between  relative">
             <span className="bg-[#FB0160] text-transparent bg-clip-text font-black text-5xl">
               .
             </span>
@@ -467,24 +467,24 @@ const Project1 = () => {
             </span>
             <div className="h-[1px] w-[99%] bg-[#FB0160] absolute bottom-3 left-1"></div>
           </div>
-          <div className=" flex justify-between relative right-16">
-            <p className="max-w-[25%] text-center">
+          <div className=" flex w-[99vw] md:w-[100%] justify-between relative right-8  md:right-16 mb-10">
+            <p className="md:max-w-[25%] text-center">
               Choose a pre-set task list{" "}
             </p>
-            <p className="max-w-[25%] text-center">
+            <p className="md:max-w-[25%] text-center">
               Choose an existing task or create a new one{" "}
             </p>
-            <p className="max-w-[25%] text-center">
+            <p className="md:max-w-[25%] text-center">
               Assign the task to someone in the guest list
             </p>
           </div>
         </div>
       </div>
       {/* Frame 12 - Event Schedule */}
-      <div className="md:flex md:h-[80vh] mb-16">
+      <div className="md:flex md:h-[80vh] md:mb-16 p-10 md:p-0">
         <div className="md:py-16 md:pl-12 md:flex md:flex-col">
           <h2 className="font-medium mb-10">Event Schedule</h2>
-          <p className="md:max-w-[70%]">
+          <p className="md:max-w-[70%] mb-10 md:mb-0">
             With the Event Schedule, the host can see a{" "}
             <strong>detailed breakdown</strong> of who is responsible for what
             and when. Keep the event running smoothly by avoiding any
@@ -500,13 +500,13 @@ const Project1 = () => {
         />
       </div>
       {/* Frame 13 - Self reflection */}
-      <div className="relative md:mb-52">
+      <div className="relative md:mb-52 p-10 md:p0 bg-accent-secondary md:bg-transparent">
         <img
           src={"/assets/project1/BackgroundSection.png"}
           alt="Background Section"
-          className="absolute object-contain"
+          className="md:absolute object-contain hidden xl:flex"
         ></img>
-        <div className="z-10 relative md:pl-36 md:pt-16 md:pr-40">
+        <div className="z-10 relative md:pl-36 md:pt-16 md:pr-40 ">
           <h2 className="mb-16">Self relfection</h2>
           <p>
             The idea for this project came from my{" "}
