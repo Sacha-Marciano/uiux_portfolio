@@ -58,7 +58,7 @@ export default function Home() {
                   />
                 </div>
                 <div
-                  style={{ borderInlineColor: item.border }}
+                  style={{ borderColor: item.border }}
                   className="flex flex-col gap-5 mx-7 md:px-7 py-7 md:py-0 border-b-4 md:border-l-4 md:border-b-0 md:w-[500px]"
                 >
                   <h2>{item.name}</h2>
@@ -67,7 +67,7 @@ export default function Home() {
                 </div>
                 <Link href={item.path}>
                   <div
-                    style={{ borderInlineColor: item.border }}
+                    style={{ borderColor: item.border }}
                     className="flex flex-col gap-5 md:pl-7 border-b-4 md:border-l-4 md:border-b-0 text-nowrap"
                   >
                     <p className="font-medium py-7 md:py-14">View Case Study</p>

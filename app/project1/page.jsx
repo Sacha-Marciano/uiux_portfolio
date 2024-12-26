@@ -19,23 +19,23 @@ const Project1 = () => {
       </div>
       {/* Frame 1 - Description */}
       <div className="flex flex-col md:flex-row justify-around text-center md:items-center py-4 md:py-28">
-        <div className="md:px-12 md:border-l-8 border-[#FB0160] md:h-[120px]">
-          <h2 className="font-bold md:w-[20%] mb-7">Role</h2>
+        <div className="md:px-12 md:border-l-8 border-[#FB0160] md:h-[120px] mb-5 md:mb-0">
+          <h2 className="font-bold md:w-[20%] mb-3 md:mb-7">Role</h2>
           <p>UX/UI Designer</p>
         </div>
-        <div className="md:px-12 md:border-l-8 border-[#FB0160] md:h-[120px]">
-          <h2 className="font-bold md:w-[20%] mb-7">What</h2>
+        <div className="md:px-12 md:border-l-8 border-[#FB0160] md:h-[120px] mb-5 md:mb-0">
+          <h2 className="font-bold md:w-[20%] mb-3 md:mb-7">What</h2>
           <p>Final Project</p>
           <p>Netcraft Academy</p>
         </div>
-        <div className="md:px-12 md:border-l-8 border-[#FB0160] md:h-[120px]">
-          <h2 className="font-bold md:w-[20%] mb-7">When</h2>
+        <div className="md:px-12 md:border-l-8 border-[#FB0160] md:h-[120px] mb-5 md:mb-0">
+          <h2 className="font-bold md:w-[20%] mb-3 md:mb-7">When</h2>
           <p>2024</p>
         </div>
       </div>
       {/* Frame 1 - Overview */}
-      <div className="flex-col h-[33vh] justify-center items-center text-center px-6">
-        <h2 className="md:mb-16 md:mt-10 font-medium">Overview</h2>
+      <div className="flex-col md:h-[33vh] justify-center items-center text-center px-6 mb-6 md:mb-0">
+        <h2 className="mb-4 md:mb-16 md:mt-10 font-medium">Overview</h2>
         <p>
           You've always wanted to host a perfect event , but the effort involved
           can feel <strong>time-consuming</strong> and{" "}
@@ -47,13 +47,13 @@ const Project1 = () => {
         </p>
       </div>
       {/* Frame 2 - Problem */}
-      <div className="container h-full px-20 py-20 bg-accent-secondary flex">
+      <div className="container h-full px-10 md:px-20 py-10 md:py-20 bg-accent-secondary md:flex">
         {/* title and description 1 */}
         <div className="md:max-w-[70%] h-full">
-          <h2 className="bg-primary text-transparent bg-clip-text pb-4 border-b-2 border-black/50 font-medium">
+          <h2 className="bg-primary text-transparent bg-clip-text pb-4 md:border-b-2 border-black/50 font-medium">
             Problem
           </h2>
-          <p className="relative top-16">
+          <p className="mb-6 md:mb-0 md:relative md:top-16">
             Organizing a private event can be overwhelming ,especially when it
             comes to organizing details , managing tasks , tracking RSVPs .
             <strong>The process often becomes chaotic and disorganized</strong>{" "}
@@ -69,18 +69,18 @@ const Project1 = () => {
         />
       </div>
       {/* Frame 2 - Solution */}
-      <div className="container h-full px-20 py-20 bg-accent-secondary">
-        <div className="flex mb-10">
+      <div className="container h-full px-10 md:px-20 py-10 md:py-20 bg-accent-secondary">
+        <div className="md:flex mb-10">
           <img
             src={"/assets/project1/Frame2_1.png"}
             alt="Solution icon"
             className="object-contain max-h-[50%]"
           />
-          <h2 className="bg-primary text-transparent bg-clip-text border-b-2 border-black/50 font-medium w-[100%] flex justify-end items-end py-10 px-20">
+          <h2 className="bg-primary text-transparent bg-clip-text md:border-b-2 border-black/50 font-medium w-[100%] md:flex justify-end items-end pt-10 md:py-10 px-20">
             Solution
           </h2>
         </div>
-        <p className="mb-24">
+        <p className="mb-10 md:mb-24">
           Together revolutionizes private event planning by streamlining
           organization and enhancing coordination. Our app provides:{" "}
         </p>
@@ -333,7 +333,7 @@ const Project1 = () => {
           src={"/assets/project1/prototype/Prototype1.png"}
           alt="Protorype Image"
           height={"80%"}
-          className="object-contain ml-10"
+          className="object-contain md:ml-10"
         />
         <div className="md:py-10 md:pl-12">
           <h2 className="font-medium mb-10">Create a new event</h2>
@@ -425,7 +425,7 @@ const Project1 = () => {
         <img
           src={"/assets/project1/prototype/Prototype3.png"}
           alt="Protorype Image"
-          className="object-contain ml-10 relative bottom-2"
+          className="object-contain md:ml-10 relative bottom-2"
         />
         <img
           src={"/assets/project1/prototype/Prototype4.png"}
