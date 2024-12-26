@@ -11,6 +11,7 @@ const projects = [
     description:
       "Together helps you to manage every details without effortless.",
     bg: "#FFF7F7",
+    border: "#FB0160",
     path: "/project1",
   },
   {
@@ -22,6 +23,7 @@ const projects = [
     description:
       "MoneyMe manage shared expenses and group accounts for any occasion with ease",
     bg: "#F8F4FFD9",
+    border: "#662AB2",
     path: "/",
   },
 ];
@@ -55,13 +57,19 @@ export default function Home() {
                     className="object-contain"
                   />
                 </div>
-                <div className="flex flex-col gap-5 mx-7 md:px-7 py-7 md:py-0 border-b-4 md:border-l-4 md:border-b-0 border-accent md:w-[500px]">
+                <div
+                  style={{ borderInlineColor: item.border }}
+                  className="flex flex-col gap-5 mx-7 md:px-7 py-7 md:py-0 border-b-4 md:border-l-4 md:border-b-0 md:w-[500px]"
+                >
                   <h2>{item.name}</h2>
                   <p>{item.question}</p>
                   <p>{item.description}</p>
                 </div>
                 <Link href={item.path}>
-                  <div className="flex flex-col gap-5 md:pl-7 border-b-4 md:border-l-4 md:border-b-0 border-accent text-nowrap">
+                  <div
+                    style={{ borderInlineColor: item.border }}
+                    className="flex flex-col gap-5 md:pl-7 border-b-4 md:border-l-4 md:border-b-0 text-nowrap"
+                  >
                     <p className="font-medium py-7 md:py-14">View Case Study</p>
                   </div>
                 </Link>
