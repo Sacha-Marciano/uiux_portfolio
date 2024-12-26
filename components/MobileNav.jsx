@@ -28,7 +28,7 @@ const MobileNav = () => {
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col">
+      <SheetContent className="flex flex-col" aria-describedby={undefined}>
         {/* logo */}
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
@@ -39,20 +39,30 @@ const MobileNav = () => {
         </div>
         {/* nav */}
         <nav className="flex flex-col justify-center items-center gap-8">
-          {links.map((link, index) => {
-            return (
-              <Link
-                href={link.path}
-                key={index}
-                className={`${
-                  link.path === pathname &&
-                  "text-accent border-b-2 border-accent"
-                } text-xl capitalize hover:text-accent transition-all`}
-              >
-                {link.name}
-              </Link>
-            );
-          })}
+          <Link
+            href="/"
+            className={`${
+              pathname === "/" && "text-accent border-b-2 border-accent"
+            } capitalize font-medium hover:text-accent transition-all`}
+          >
+            Projects
+          </Link>
+          <Link
+            href="/about"
+            className={`${
+              pathname === "/about" && "text-accent border-b-2 border-accent"
+            } capitalize font-medium hover:text-accent transition-all`}
+          >
+            About me
+          </Link>
+          <Link
+            href={"./assets/resume/Sacha_Mordekhai_marciano_CV.pdf"}
+            download
+            target="_blank"
+            className={` capitalize font-medium hover:text-accent transition-all`}
+          >
+            Resume
+          </Link>
         </nav>
       </SheetContent>
     </Sheet>

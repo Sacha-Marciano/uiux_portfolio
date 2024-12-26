@@ -1,5 +1,3 @@
-import tailwindcssAnimate from "tailwindcss-animate";
-
 export default {
   darkMode: ["class"],
   content: [
@@ -45,7 +43,4 @@ export default {
       },
     },
   },
-  plugins: [tailwindcssAnimate, require("tailwindcss-animate")],
 };
-
-// "linear-gradient(102deg, #FB0160 0%, #F703D0 100%)"

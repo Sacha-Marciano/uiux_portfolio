@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <section className="h-full ">
       <div className="container mx-auto h-full flex flex-col">
-        <div className="md:h-[50vh] flex flex-col gap-7 items-center mt-12 md:mt-24 mb-12 text-center">
+        <div className="md:h-[50vh] flex flex-col gap-7 items-center   text-center">
           <h1>Hello,</h1>
           <h2>I'm Eden Journo Fellous</h2>
           <h2>UX/UI Designer</h2>
