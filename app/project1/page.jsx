@@ -18,18 +18,18 @@ const Project1 = () => {
         <img src={"/assets/project1/Frame1.png"} />
       </div>
       {/* Frame 1 - Description */}
-      <div className="flex flex-col md:flex-row justify-around items-center md:py-28">
-        <div className="px-12 border-l-8 h-[120px]">
-          <h2 className="font-bold w-[20%] mb-7">Role</h2>
+      <div className="flex flex-col md:flex-row justify-around text-center md:items-center py-4 md:py-28">
+        <div className="md:px-12 md:border-l-8 border-[#FB0160] md:h-[120px]">
+          <h2 className="font-bold md:w-[20%] mb-7">Role</h2>
           <p>UX/UI Designer</p>
         </div>
-        <div className="px-12 border-l-8 h-[120px]">
-          <h2 className="font-bold w-[20%] mb-7">What</h2>
+        <div className="md:px-12 md:border-l-8 border-[#FB0160] md:h-[120px]">
+          <h2 className="font-bold md:w-[20%] mb-7">What</h2>
           <p>Final Project</p>
           <p>Netcraft Academy</p>
         </div>
-        <div className="px-12 border-l-8 h-[120px]">
-          <h2 className="font-bold w-[20%] mb-7">When</h2>
+        <div className="md:px-12 md:border-l-8 border-[#FB0160] md:h-[120px]">
+          <h2 className="font-bold md:w-[20%] mb-7">When</h2>
           <p>2024</p>
         </div>
       </div>

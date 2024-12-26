@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
 
 const projects = [
@@ -6,7 +7,7 @@ const projects = [
     num: "01",
     name: "Together",
     pic: "/assets/projects/Project1.png",
-    question: "Feeling overwhekmed with event planning ?",
+    question: "Feeling overwhelmed with event planning ?",
     description:
       "Together helps you to manage every details without effortless.",
     bg: "#FFF7F7",
@@ -46,7 +47,7 @@ export default function Home() {
               >
                 <div
                   style={{ backgroundColor: item.bg }}
-                  className={`md:min-w-[40vw] md:max-w-[40vw] w-full flex justify-center p-8 rounded-3xl`}
+                  className={`md:min-w-[30vw] md:max-w-[30vw] md:min-h-[40vh] md:max-h-[40vh] w-full flex justify-center p-8 rounded-3xl`}
                 >
                   <img
                     src={item.pic}
@@ -54,7 +55,7 @@ export default function Home() {
                     className="object-contain"
                   />
                 </div>
-                <div className="flex flex-col gap-5 mx-7 md:px-7 py-7 md:py-0 border-b-4 md:border-l-4 md:border-b-0 border-accent">
+                <div className="flex flex-col gap-5 mx-7 md:px-7 py-7 md:py-0 border-b-4 md:border-l-4 md:border-b-0 border-accent md:w-[500px]">
                   <h2>{item.name}</h2>
                   <p>{item.question}</p>
                   <p>{item.description}</p>
@@ -64,21 +65,6 @@ export default function Home() {
                     <p className="font-medium py-7 md:py-14">View Case Study</p>
                   </div>
                 </Link>
-                {/* <Link
-                  href={item.path}
-                  className="items-center justify-center xl:gap-4  relative md:flex"
-                > */}
-                {/* <div className="xl:max-w-[33%] h-24 text-2xl xl:border-l-4 xl:border-b-0 border-b-8 p-8 border-accent">
-                    {" "}
-                    {item.name}
-                  </div>
-                  <div className="xl:max-w-[33%] h-24 text-wrap xl:border-l-8 xl:border-b-0 border-b-8 px-8 border-accent">
-                    {item.description}{" "}
-                  </div>
-                  <div className="xl:max-w-[33%] h-24 text-2xl xl:border-l-8 xl:border-b-0 p-8 border-b-8 border-accent">
-                    View case study {`->`}
-                  </div> */}
-                {/* </Link> */}
               </li>
             );
           })}
