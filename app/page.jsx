@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 
+import { ChevronRight } from "lucide-react";
+
 const projects = [
   {
     num: "01",
@@ -29,13 +31,15 @@ const projects = [
 ];
 export default function Home() {
   return (
-    <section className="h-full ">
+    <section className="h-full p-4 md:p-8 ">
       <div className="container mx-auto h-full flex flex-col">
-        <div className="md:h-[50vh] flex flex-col gap-7 items-center   text-center">
-          <h1>Hello,</h1>
-          <h2>I'm Eden Journo Fellous</h2>
-          <h2>UX/UI Designer</h2>
-          <p>
+        <div className="flex flex-col gap-1 md:gap-7 items-center  text-center mb-16 md:mb-36">
+          <h1 className="text-lg md:text-2xl font-bold">Hello,</h1>
+          <h2 className="text-lg md:text-2xl font-bold">
+            I'm Eden Journo Fellous
+          </h2>
+          <h2 className="text-lg md:text-2xl font-bold">UX/UI Designer</h2>
+          <p className=" text-sm md:text-lg mt-4 md:mt-0">
             a UX/UI Designer focused to blending creativity and functionality to
             deliver intuitive and delightful user experiences.
           </p>
@@ -45,7 +49,7 @@ export default function Home() {
             return (
               <li
                 key={index}
-                className="relative mb-8 flex flex-col md:flex-row items-center md:gap-14"
+                className="relative mb-8 flex flex-col md:flex-row items-center "
               >
                 <div
                   style={{ backgroundColor: item.bg }}
@@ -59,18 +63,22 @@ export default function Home() {
                 </div>
                 <div
                   style={{ borderColor: item.border }}
-                  className="flex flex-col gap-5 mx-7 md:px-7 py-7 md:py-0 border-b-4 md:border-l-4 md:border-b-0 md:w-[500px]"
+                  className="flex flex-col md:gap-5 mx-7 md:px-7 py-7 md:py-0 border-y-4 md:border-x-4 md:border-y-0 md:w-[500px]"
                 >
-                  <h2>{item.name}</h2>
-                  <p>{item.question}</p>
-                  <p>{item.description}</p>
+                  <h2 className="text-xl font-semibold mb-2 md:text-2xl ">
+                    {item.name}
+                  </h2>
+                  <p className="text-xs md:text-sm">{item.question}</p>
+                  <p className="text-xs md:text-sm">{item.description}</p>
                 </div>
                 <Link href={item.path}>
                   <div
                     style={{ borderColor: item.border }}
-                    className="flex flex-col gap-5 md:pl-7 border-b-4 md:border-l-4 md:border-b-0 text-nowrap"
+                    className="flex flex-col gap-5 text-nowrap"
                   >
-                    <p className="font-medium py-7 md:py-14">View Case Study</p>
+                    <p className="font-medium py-7 md:py-14 flex">
+                      View Case Study <ChevronRight />
+                    </p>
                   </div>
                 </Link>
               </li>
