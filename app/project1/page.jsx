@@ -5,52 +5,58 @@ const Project1 = () => {
     <section className="container relative">
       {/* Frame 1 - Title */}
       <div className="md:h-[33%] md:flex md:justify-end">
-        <div className=" md:absolute md:max-w-[45%] text-center top-24 left-24">
-          <h1 className=" bg-primary text-transparent bg-clip-text mb-8 font-medium">
+        <div className=" md:absolute text-center top-5 lg:top-10 left-0">
+          <h1 className="text-2xl lg:text-4xl bg-primary text-transparent bg-clip-text mb-2 lg:mb-8 font-medium">
             Together
           </h1>
-          <p>
-            The app that make hosting events stress-free by bringing everyone{" "}
+          <p className="text-xs">
+            The app that make hosting events stress-free by bringing everyone
             <br></br>
-            together to plan organize and contribute.
+            together to plan, organize and contribute.
           </p>
         </div>
         <img src={"/assets/project1/Frame1.png"} />
       </div>
       {/* Frame 1 - Description */}
-      <div className="flex flex-col md:flex-row justify-around text-center md:items-center py-4 md:py-28">
-        <div className="md:px-12 md:border-l-8 border-[#FB0160] md:h-[120px] mb-5 md:mb-0">
-          <h2 className="font-bold md:w-[20%] mb-3 md:mb-7">Role</h2>
+      <div className="flex flex-col md:flex-row justify-center text-center md:items-center py-4 md:pt-20">
+        <div className="mx-auto p-3 md:px-12 border-b-4 md:border-l-4 md:border-b-0 border-[#FB0160] md:h-[120px] mb-5 md:mb-0 lg:mx-12">
+          <h2 className="font-extrabold md:w-[20%] mb-3 md:mb-7 text-xl">
+            ROLE
+          </h2>
           <p>UX/UI Designer</p>
         </div>
-        <div className="md:px-12 md:border-l-8 border-[#FB0160] md:h-[120px] mb-5 md:mb-0">
-          <h2 className="font-bold md:w-[20%] mb-3 md:mb-7">What</h2>
-          <p>Final Project</p>
+        <div className="mx-auto p-3 md:px-12 border-b-4 md:border-l-4 md:border-b-0 border-[#FB0160] md:h-[120px] mb-5 md:mb-0 lg:mx-12">
+          <h2 className="font-extrabold md:w-[20%] mb-3 md:mb-7 text-xl">
+            WHAT
+          </h2>
+          <p className="md:text-left ">Final Project</p>
           <p>Netcraft Academy</p>
         </div>
-        <div className="md:px-12 md:border-l-8 border-[#FB0160] md:h-[120px] mb-5 md:mb-0">
-          <h2 className="font-bold md:w-[20%] mb-3 md:mb-7">When</h2>
-          <p>2024</p>
+        <div className="mx-auto p-3 md:px-12 border-b-4 md:border-l-4 md:border-b-0 border-[#FB0160] md:h-[120px] mb-5 md:mb-0 lg:mx-12">
+          <h2 className="font-extrabold md:w-[20%] mb-3 md:mb-7 text-xl">
+            WHEN
+          </h2>
+          <p className="md:text-left">2024</p>
         </div>
       </div>
       {/* Frame 1 - Overview */}
-      <div className="flex-col md:h-[33vh] justify-center items-center text-center px-6 mb-6 md:mb-0">
-        <h2 className="mb-4 md:mb-16 md:mt-10 font-medium">Overview</h2>
-        <p>
+      <div className="flex flex-col md:h-[33vh] justify-center items-center text-center px-6 mb-6">
+        <h2 className="mb-4 md:mb-8 md:mt-10 font-medium text-2xl">Overview</h2>
+        <p className="text-left">
           You've always wanted to host a perfect event , but the effort involved
           can feel <strong>time-consuming</strong> and{" "}
-          <strong>complicated</strong>. Together helps you streamline event
-          planning by <strong>connecting participants</strong> to share tasks
-          and information effortlessly. With everyone working together,{" "}
-          <strong>planning becomes smoother</strong> and more{" "}
+          <strong>complicated</strong>. <br></br> Together helps you streamline
+          event planning by <strong>connecting participants</strong> to share
+          tasks and information effortlessly.<br></br> With everyone working
+          together, <strong>planning becomes smoother</strong> and more{" "}
           <strong>enjoyable</strong> for everyone involved.
         </p>
       </div>
       {/* Frame 2 - Problem */}
-      <div className="container h-full px-10 md:px-20 py-10 md:py-20 bg-accent-secondary md:flex">
+      <div className="container h-full px-10 md:px-20 md:pr-56 py-10 md:py-20 bg-accent-secondary relative ">
         {/* title and description 1 */}
-        <div className="md:max-w-[70%] h-full">
-          <h2 className="bg-primary text-transparent bg-clip-text pb-4 md:border-b-2 border-black/50 font-medium">
+        <div className="h-full w-full">
+          <h2 className="bg-primary text-transparent bg-clip-text pb-4 md:border-b-2 border-black/50 font-medium text-2xl">
             Problem
           </h2>
           <p className="mb-6 md:mb-0 md:relative md:top-16">
@@ -65,24 +71,24 @@ const Project1 = () => {
         <img
           src={"/assets/project1/Frame2.png"}
           alt="Problem icon"
-          className="object-contain max-h-[50%]"
+          className="h-[40%] absolute md:top-24 md:right-10"
         />
       </div>
       {/* Frame 2 - Solution */}
-      <div className="container h-full px-10 md:px-20 py-10 md:py-20 bg-accent-secondary">
+      <div className="container h-full px-10 md:px-20 py-10 md:py-20 bg-accent-secondary ">
         <div className="md:flex mb-10">
           <img
             src={"/assets/project1/Frame2_1.png"}
             alt="Solution icon"
-            className="object-contain max-h-[50%]"
+            className="object-contain max-h-[40%]"
           />
-          <h2 className="bg-primary text-transparent bg-clip-text md:border-b-2 border-black/50 font-medium w-[100%] md:flex justify-end items-end pt-10 md:py-10 px-20">
+          <h2 className="bg-primary text-transparent bg-clip-text md:border-b-2 border-black/50 font-medium w-[100%] md:flex justify-end items-end pt-10 md:py-10 px-20 text-2xl">
             Solution
           </h2>
         </div>
-        <p className="mb-10 md:mb-24">
+        <p className="mb-10 ">
           Together revolutionizes private event planning by streamlining
-          organization and enhancing coordination. Our app provides:{" "}
+          organization and enhancing coordination.<br></br> Our app provides:{" "}
         </p>
         {/* Solutions */}
         <div className="flex flex-col gap-6">
@@ -139,7 +145,7 @@ const Project1 = () => {
       {/* Frame 3 - Competitors */}
       <div className="flex flex-col justify-center items-center">
         <h2 className="mt-12 md:mt-28 mb-16"> Competitors Analysis</h2>
-        <p className="max-w-[1250px] px-10 md:px-0">
+        <p className="max-w-[1250px] px-10 md:px-28">
           The competitive analysis revealed significant shortcomings in current
           personal event planning apps. Evite focuses on digital invitations and
           RSVP tracking but lacks tools for task management or guest
@@ -152,21 +158,27 @@ const Project1 = () => {
           <strong>missed details</strong>
         </p>
         {/* competitors logos */}
-        <div className="flex gap-16 justify-center my-24 px-10 md:px-0">
-          <div>
-            <img src={"/assets/project1/competitors/Competitors1.png"} />
+        <div className="flex gap-16 items-start justify-between my-24 px-10 md:px-0">
+          <div className=" flex flex-col items-center justify-center">
+            <img
+              src={"/assets/project1/competitors/Competitors1.png"}
+              className="h-[50%]"
+            />
             <p className="text-center mt-5">Bring it</p>
           </div>
-          <div>
-            <img src={"/assets/project1/competitors/Competitors2.png"} />
+          <div className=" flex flex-col items-center justify-center">
+            <img
+              src={"/assets/project1/competitors/Competitors2.png"}
+              className="h-[50%]"
+            />
             <p className="text-center mt-5">Evite</p>
           </div>
-          <div>
+          <div className=" flex flex-col items-center justify-center">
             <img
               src={"/assets/project1/competitors/Competitors3.png"}
-              className="md:ml-3"
+              className="h-[50%]"
             />
-            <p className="text-center mt-3">Pro Party Planner</p>
+            <p className="text-center mt-5">Pro Party Planner</p>
           </div>
         </div>
       </div>
@@ -504,7 +516,7 @@ const Project1 = () => {
         <img
           src={"/assets/project1/BackgroundSection.png"}
           alt="Background Section"
-          className="md:absolute object-contain hidden xl:flex"
+          className="md:absolute right-0 object-contain hidden xl:flex"
         ></img>
         <div className="z-10 relative md:pl-36 md:pt-16 md:pr-40 ">
           <h2 className="mb-16">Self relfection</h2>

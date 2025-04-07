@@ -9,7 +9,7 @@ const projects = [
     num: "01",
     name: "Together",
     pic: "/assets/projects/Project1.png",
-    question: "Feeling overwhelmed with event planning ?",
+    question: "Feeling overwhelmed with event planning?",
     description:
       "Together helps you to manage every details without effortless.",
     bg: "#FFF7F7",
