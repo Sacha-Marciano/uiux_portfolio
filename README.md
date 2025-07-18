@@ -1,48 +1,168 @@
-# UI/UX Designer Portfolio
+# Eden Journo Fellous – UI/UX Designer Portfolio
 
-This portfolio is designed to showcase various projects and case studies by a UI/UX designer. It provides a comprehensive view of the designer's skills, creativity, and approach to problem-solving. The platform is tailored to allow the designer to effortlessly add new projects, keeping the portfolio up-to-date with their latest work. Additionally, it offers hiring managers easy access to download the designer's resume, facilitating the recruitment process.
+A modern, responsive portfolio web application to showcase UI/UX projects and case studies. Built with Next.js and Tailwind CSS, this portfolio is designed for easy customization and continuous updates, providing a seamless experience for both designers and potential employers.
 
-## Technical Overview
+---
 
-### Front-End
+## Table of Contents
+- [Features](#features)
+- [Live Demo](#live-demo)
+- [Screenshots](#screenshots)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Customization](#customization)
+- [How to Add Projects & Case Studies](#how-to-add-projects--case-studies)
+- [Resume Download](#resume-download)
+- [Contributing](#contributing)
+- [License](#license)
 
-The front-end is developed using Next.js, a powerful React framework known for its performance and flexibility. Next.js enables server-side rendering and static site generation, which contribute to faster load times and a smoother user experience. The interface is designed with a focus on usability and aesthetics, ensuring that both the designer and potential employers have a seamless experience.
+---
 
-### Customization
+## Features
+- **Showcase Projects & Case Studies:** Highlight your best work with detailed project pages, images, and research insights.
+- **Responsive Design:** Fully optimized for desktop, tablet, and mobile devices.
+- **Easy Customization:** Update content, colors, and layout to match your personal brand.
+- **Downloadable Resume:** Employers can download your resume directly from the site.
+- **Modern UI:** Clean, accessible, and visually appealing interface.
+- **Continuous Updates:** Effortlessly add new projects and case studies.
 
-The portfolio is highly customizable, allowing the designer to personalize the layout, color scheme, and content presentation. This flexibility ensures that the portfolio can reflect the designer's unique style and brand identity.
+---
 
-### Responsiveness
+## Live Demo
+*Coming soon: Deploy to Vercel or your preferred platform and add your link here!*
 
-The portfolio is fully responsive, providing an optimal viewing experience across a wide range of devices, from desktops to mobile phones. This ensures that potential employers can access the portfolio easily, regardless of their device.
+---
 
-### Resume Download
+## Screenshots
+*Add screenshots or GIFs of your portfolio here to showcase the UI and features.*
 
-A key feature of this portfolio is the ability for hiring managers to download the designer's resume directly from the site. This feature simplifies the application process and ensures that all relevant information is readily available.
+---
 
-### Continuous Updates
+## Tech Stack
+- **Framework:** [Next.js 15](https://nextjs.org/)
+- **UI Library:** [React 19](https://react.dev/)
+- **Styling:** [Tailwind CSS 3](https://tailwindcss.com/)
+- **Charts:** [Chart.js](https://www.chartjs.org/)
+- **Icons:** [Lucide React](https://lucide.dev/), [React Icons](https://react-icons.github.io/react-icons/)
+- **UI Primitives:** [Radix UI](https://www.radix-ui.com/)
+- **Animation:** [Framer Motion](https://www.framer.com/motion/)
 
-With a user-friendly interface, the designer can continuously update the portfolio with new projects and case studies. This keeps the portfolio dynamic and reflective of the designer's ongoing professional growth.
+---
 
-This portfolio is not only a showcase of the designer's work but also a tool for career advancement, combining technical excellence with practical functionality.
+## Getting Started
 
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-## How to
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/eden-portfolio.git
+   cd eden-portfolio
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-### Editing Project Showcase
+4. **Build for production:**
+   ```bash
+   npm run build
+   npm start
+   # or
+   yarn build && yarn start
+   ```
 
- - Place the relevant image file in the public directory of the project.
+5. **Lint the code:**
+   ```bash
+   npm run lint
+   # or
+   yarn lint
+   ```
 
- - Update the projects object in the homepage component by adding the image's source path and related metadata.
+---
 
-### Adding a Case Study
+## Project Structure
+```
+eden-portfolio/
+├── app/                # Next.js app directory (pages, layouts, routes)
+│   ├── about/          # About page
+│   ├── project1/       # Example project/case study
+│   ├── globals.css     # Global styles (Tailwind)
+│   ├── layout.jsx      # Root layout
+│   └── page.jsx        # Home page
+├── components/         # Reusable React components
+│   ├── ui/             # UI primitives (e.g., Sheet)
+├── lib/                # Utility functions
+├── public/             # Static assets (images, resume, etc.)
+│   ├── assets/         # Project images, resume PDF, etc.
+├── tailwind.config.mjs # Tailwind CSS config
+├── package.json        # Project metadata and scripts
+└── ...
+```
 
- - Upload all relevant media files to the assets directory.
+---
 
- - Duplicate the project-1 page located in the appropriate directory.
+## Customization
+- **Colors & Fonts:** Edit `tailwind.config.mjs` and `app/globals.css` to change the color palette and typography.
+- **Branding:** Update the logo, favicon (`app/favicon.ico`), and header/footer components.
+- **Navigation:** Edit `components/Nav.jsx` and `components/MobileNav.jsx` to modify navigation links.
 
- - Modify the duplicated page by editing the necessary fields such as title, description, media links, and any other project-specific information.
+---
 
- - Ensure all paths and references are correctly updated to reflect the new media and case study details for seamless integration into the portfolio.
+## How to Add Projects & Case Studies
+
+### Add a New Project to the Home Page
+1. **Add your project image:**
+   - Place the image in `public/assets/projects/`.
+2. **Update the projects list:**
+   - Edit `app/page.jsx` and add a new object to the `projects` array with your project details (name, image path, description, etc.).
+
+### Add a New Case Study Page
+1. **Duplicate an existing project page:**
+   - Copy `app/project1/page.jsx` to a new folder (e.g., `app/project2/page.jsx`).
+2. **Add media assets:**
+   - Place images, diagrams, and other media in `public/assets/project2/`.
+3. **Edit the new page:**
+   - Update titles, descriptions, and image paths to match your new project.
+4. **Update navigation (if needed):**
+   - Add a link to the new project in the home page or navigation components.
+
+---
+
+## Resume Download
+- Place your resume PDF in `public/assets/resume/`.
+- The navigation bar includes a direct download link to the resume file.
+
+---
+
+## Contributing
+Contributions are welcome! To propose changes:
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes
+4. Push to your fork and open a Pull Request
+
+---
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## Credits
+- Developed by Sacha M. Marciano
+- Design & content by Eden Journo Fellous
 
 
